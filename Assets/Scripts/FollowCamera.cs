@@ -6,7 +6,8 @@ public class FollowCamera : MonoBehaviour
 {
     [SerializeField] Transform target;
 
-    void Update()
+    // To make camera to move along character use lateupdate
+    void LateUpdate()
     {
         this.transform.position = target.position;
     }
