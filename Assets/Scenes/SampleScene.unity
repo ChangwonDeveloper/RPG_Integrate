@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 127551021}
   - component: {fileID: 127551020}
   - component: {fileID: 127551019}
+  - component: {fileID: 127551023}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -213,13 +214,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127551018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.08, y: 0.97, z: 16.42}
+  m_LocalPosition: {x: -14.24, y: 0.97, z: 10.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &127551023
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127551018}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &489310834
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,9 +322,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168496315}
     m_Modifications:
+    - target: {fileID: 1407188249900476, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Tent_Small_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4075395275303206, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_RootOrder
@@ -461,9 +486,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168496315}
     m_Modifications:
+    - target: {fileID: 1407188249900476, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Tent_Small_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4075395275303206, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_RootOrder
@@ -614,7 +647,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1168496315
 Transform:
@@ -642,9 +675,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168496315}
     m_Modifications:
+    - target: {fileID: 1407188249900476, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Tent_Small_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4075395275303206, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_RootOrder
@@ -704,9 +745,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168496315}
     m_Modifications:
+    - target: {fileID: 1407188249900476, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Tent_Small_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705045138069434, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4075395275303206, guid: 59e44e7d751e343459a102574fe92fac, type: 3}
       propertyPath: m_RootOrder
