@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class Mover : MonoBehaviour
 {
     [SerializeField] Transform target = null;
@@ -17,25 +18,18 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButton(0))
-        {
-            MoveToCursor();
-        }
         UpdateAnimator();
     }
 
 
-    // PRIVATE METHODS
-    private void MoveToCursor()
+    // PUBLIC METHODS
+    public void MoveTo(Vector3 destination)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-        if(hasHit)
-        {
-            navMeshAgent.SetDestination(hit.point);
-        }
+        navMeshAgent.SetDestination(destination);
     }
+
+
+    // PRIVATE METHODS
     private void UpdateAnimator()
     {
         Vector3 global_velocity = navMeshAgent.velocity;
