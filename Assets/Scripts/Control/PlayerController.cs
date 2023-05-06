@@ -1,34 +1,37 @@
 ﻿using System.Collections;
 using UnityEngine;
+using RPG.Movement;
 
-
-public class PlayerController : MonoBehaviour
+namespace RPG.Control
 {
-    Mover mover;
-
-    // UNITY METHODS
-
-    private void Awake()
+    public class PlayerController : MonoBehaviour
     {
-        mover = GetComponent<Mover>();
-    }
-    private void Update()
-    {
-        if (Input.GetMouseButton(0))
+        Mover mover;
+
+        // UNITY METHODS
+
+        private void Awake()
         {
-            MoveToCursor();
+            mover = GetComponent<Mover>();
         }
-    }
-
-    // PRIVATE METHODS
-    private void MoveToCursor()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-        if (hasHit)
+        private void Update()
         {
-            mover.MoveTo(hit.point);
+            if (Input.GetMouseButton(0))
+            {
+                MoveToCursor();
+            }
+        }
+
+        // PRIVATE METHODS
+        private void MoveToCursor()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            bool hasHit = Physics.Raycast(ray, out hit);
+            if (hasHit)
+            {
+                mover.MoveTo(hit.point);
+            }
         }
     }
 }
